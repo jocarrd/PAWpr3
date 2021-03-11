@@ -1,0 +1,35 @@
+.logoGrande{
+	width:80%;
+}
+.masonry-filter-holder{
+	padding-left:200px;
+}
+#fabricante, #precio, #tipo, #año, #cantidad{
+	text-align:center;
+	padding-left:20px;
+	padding-right:20px;
+}
+#precio{
+	padding-left:70px;
+	padding-right:20px;
+}
+#advertencia{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#centro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+.myPieChart{
+	display:table-cell;
+	vertical-align:middle;
+}
+.picker{
+	font-size:80%;
+}

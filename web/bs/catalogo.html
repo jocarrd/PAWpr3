@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Electrosa >> Catálogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Aplicación de prueba de Programación de aplicaciones Web; Grado en informática; Universidad de La Rioja."
+        lang="es-ES">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all"/>  <!-- iconos lupa... sup dcha -->
+          <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all"/>          <!-- iconos google... pie -->
+  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all"/>        <!-- iconos centro -->
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>            <!-- Tema principal -->
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+  <!-- Afecta al tamaño del jumbotron -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">  <!-- Afecta al tipo de la letra -->
+  <!--<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>-->
+  <!--<link href="css/flickity.css" rel="stylesheet" type="text/css" media="all"/>-->
+  <!--<link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all"/>-->
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <!--ME GUSTA MAS SIN ESTA FUENTE-->
+  <!--<link href="css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all"/>  &lt;!&ndash; Afecta al tamaño de la letra &ndash;&gt;-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet"/> &lt;!&ndash; font usado por el anterior &ndash;&gt;-->
+
+</head>
+<body class=" ">
+<a id="start"></a>
+<section class="bar bar-3 bar--sm bg--secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="bar__module"></div>
+      </div>
+      <div class="col-lg-6 text-right text-left-xs text-left-sm" style="font-size:13px;text-transform: uppercase;">
+        <div class="bar__module">
+          <ul class="menu-horizontal">
+            <li><div class="modal-instance"><p>Para usuarios</p></div></li>
+            <li>
+              <div class="modal-instance">
+                <a href="indexAdministrador.html" class="modal-trigger">Intranet</a>
+                <div class="modal-container">
+                  <div class="modal-content">
+                    <section class="imageblock feature-large bg--white border--round ">
+                      <div class="imageblock__content col-lg-5 col-md-3 pos-left">
+                        <div class="background-image-holder"><img alt="image" src="img/cowork-11.jpg"/></div>
+                      </div>
+                      <div class="container">
+                        <div class="row justify-content-end">
+                          <div class="col-lg-7">
+                            <div class="row justify-content-center">
+                              <div class="col-lg-10 col-md-11">
+                                <h2>Acceso de usuario administrador</h2>
+                                <form>
+                                  <div class="row">
+                                    <div class="col-12"><input type="text" name="Usuario" placeholder="Usuario"/></div>
+                                    <div class="col-12"><input type="password" name="Password" placeholder="Contraseña"/></div>
+                                    <div class="col-12"><a class="btn btn--sm btn--primary type--uppercase" href="indexAdministrador.html"><span class="btn__text">Acceder</span></a></div>
+                                  </div>
+                                  <!--end row-->
+                                </form>
+                              </div>
+                            </div>
+                            <!--end of row-->
+                          </div>
+                          <!--end of col-->
+                        </div>
+                        <!--end of row-->
+                      </div>
+                      <!--end of container-->
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" data-notification-link="search-box"><i class="stack-search"></i></a></li>
+            <li><a href="carrito.html"><i class="stack-basket"></i></a></li>
+            <li class="dropdown dropdown--absolute">
+              <span class="dropdown__trigger"><img alt="Image" class="flag" src="img/flag-2.png"/></span>
+              <div class="dropdown__container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-1 dropdown__content">
+                      <ul class="menu-vertical text-left">
+                        <li><a href="#"><img alt="Image" class="flag" src="img/flag-1.png"/> EN</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</section>
+<!--end bar-->
+
+<div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+  <form>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8"><input type="search" name="query" placeholder="Introduzca el texto a buscar"/></div>
+    </div>
+    <!--end of row-->
+  </form>
+</div>
+<!--end of notification-->
+<div class="nav-container ">
+  <div class="bar bar--sm visible-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-md-2">
+          <a href="index.html">
+            <img class="logo logo-dark" alt="logo" src="img/logo-dark.png"/>
+            <img class="logo logo-light" alt="logo" src="img/logo-light.png"/>
+          </a>
+        </div>
+        <div class="col-9 col-md-10 text-right">
+          <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs"><i class="icon icon--sm stack-interface stack-menu"></i></a>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </div>
+  <!--end bar-->
+  <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--absolute">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-md-2 hidden-xs">
+          <div class="bar__module">
+            <a href="index.html">
+              <img class="logo logo-dark" alt="logo" src="img/logo-dark.png"/>
+              <img class="logo logo-light" alt="logo" src="img/logo-light.png"/>
+            </a>
+          </div>
+          <!--end module-->
+        </div>
+        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+          <div class="bar__module">
+            <ul class="menu-horizontal text-left">
+              <li><a href="index.html"><span><i class="icon icon-Home-2 icon--sm"></i> Sobre electrosa</span></a></li>
+              <li><a href="donde.html"><span><i class="icon icon-Map-Marker icon--sm"></i> Dónde estamos</span></a></li>
+              <li><a href="catalogo.html"><span><i class="icon icon-Shop-2 icon--sm"></i> Hojear catálogo</span></a></li>
+              <li><a href="login.html"><span><i class="icon icon-User icon--sm"></i> Usuario registrado</span></a></li>
+            </ul>
+          </div>
+          <!--end module-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </nav>
+  <!--end bar-->
+</div>
+<div class="main-container">
+  <section class="switchable switchable--switch space--xs">
+    <div class="container">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Inicio</a></li>
+        <li>Comprar</li>
+      </ol>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="height-50 imagebg border--round" data-overlay="2">
+            <div class="background-image-holder"><img alt="background" src="img/hero-3.jpg"/></div>
+            <div class="pos-vertical-center col-md-6 col-lg-5 pl-5"><h2>Consulte los artículos disponibles en nuestro catálogo.</h2></div>
+          </div>
+          <p><h2>Nuestros productos</h2>Puede buscar los productos que necesite en nuestro catálogo.</p>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="space--sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="masonry masonry--tiles">
+            <div class="masonry-filter-container d-flex align-items-center">
+              <span>Tipo:</span>
+              <div class="masonry-filter-holder"><div class="masonry__filters" data-filter-all-text="- Cualquiera -"></div></div>
+              <div><span id="fabricante">Fabricante:</span></div>
+              <div style="text-align:center;">
+
+                <select>
+                  <option value="0">- Cualquiera-</option>
+                  <option value="Edesa">Edesa</option>
+                  <option value="Fagor">Fagor</option>
+                  <option value="Miele">Miele</option>
+                </select>
+
+              </div>
+              <div><span id="precio">Precio:	</span></div>
+              <div style="text-align:center;">
+                <select>
+                  <option value="0">- Cualquiera-</option>
+                  <option value="10-50">10-50</option>
+                  <option value="100-200">100-200</option>
+                  <option value="200-500">200-500</option>
+                  <option value="200-500">500-1000</option>
+                  <option value="1000">1000</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="masonry-filter-container d-flex align-items-center"></div>
+
+            <div class="masonry__container row">
+              <div class="masonry__item col-lg-3 col-md-6"></div>
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Lavadora">
+                <div class="product product--tile bg--secondary text-center">
+                  <span class="label">Oferta</span>
+                  <a href="fichaArticulo.html"><img alt="Image" src="img/product-small-1.png"/></a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Ede-354LD</h5>
+                      <span> Lavadora</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block type--strikethrough">899€</span>
+                      <span class="h4 inline-block">799€</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Campana">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#"><img alt="Image" src="img/product-small-8.png"/></a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Fag-119CA</h5>
+                      <span> Campana</span>
+                    </div>
+                    <div><span class="h4 inline-block">218.5 €</span></div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Microondas">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#"><img alt="Image" src="img/product-small-2.png"/></a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Fag-127MO</h5>
+                      <span> Microondas</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">172.5 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Frigorífico">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#"><img alt="Image" src="img/product-small-12.png"/></a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Ede-348FO</h5>
+                      <span> Frigorífico</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">715.0 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Lavavajillas">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-10.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Mie-011LV</h5>
+                      <span> Lavavajillas </span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">660.0 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Cocina">
+                <div class="product product--tile bg--secondary text-center">
+                  <span class="label">Oferta</span>
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-5.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Fag-204CN</h5>
+                      <span> Cocina</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block type--strikethrough">479€</span>
+                      <span class="h4 inline-block">231.61€</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Aspirador">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-4.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Mie-096AR</h5>
+                      <span> Aspirador</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">95.4 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Frigorífico">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-3.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Fag-266FO</h5>
+                      <span> Frigorífico</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">754.97 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Placa">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-11.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Ede-415PA</h5>
+                      <span> Placa</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">220.0 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Lavadora">
+                <div class="product product--tile bg--secondary text-center">
+                  <span class="label">Oferta</span>
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-7.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Ede-363LD</h5>
+                      <span> Lavadora</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block type--strikethrough">699€</span>
+                      <span class="h4 inline-block">559€</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Horno">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-9.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Ede-383HO</h5>
+                      <span> Horno</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">279€</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+              <div class="masonry__item col-lg-3 col-md-6" data-masonry-filter="Cocina">
+                <div class="product product--tile bg--secondary text-center">
+                  <a href="#">
+                    <img alt="Image" src="img/product-small-6.png"/>
+                  </a>
+                  <a class="block" href="#">
+                    <div>
+                      <h5>Fag-203CN</h5>
+                      <span> Cocina</span>
+                    </div>
+                    <div>
+                      <span class="h4 inline-block">229.42 €</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!--end item-->
+            </div>
+            <!--end masonry container-->
+          </div>
+
+          <!--end masonry-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="pagination">
+            <a class="pagination__prev" href="#" title="Previous Page">&laquo;</a>
+            <ol>
+              <li class="pagination__current">1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ol>
+            <a class="pagination__next" href="#" title="Next Page">&raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <footer class="text-center-xs space--xs bg--dark ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <ul class="list-inline">
+            <li><a href="mailto:francisco.garcia@unirioja.es"><span class="h6 type--uppercase"> Contacto</span></a></li>
+            <li><a href="donde.html"><span class="h6 type--uppercase">Mapa</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-right text-center-xs">
+          <ul class="social-list list-inline list--hover">
+            <li><a href="#"><i class="socicon socicon-google icon icon--xs"></i></a></li>
+            <li><a href="#"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+            <li><a href="#"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+            <li><a href="#"><i class="socicon socicon-instagram icon icon--xs"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--end of row-->
+      <div class="row">
+        <div class="col-md-7">
+          <span class="type--fine-print">&copy; 2012 Francisco J. García Izquierdo</span>
+          <a class="type--fine-print" href="#">Politica privacidad</a>
+          <a class="type--fine-print" href="#">Aviso legal</a>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </footer>
+</div>
+
+<!--<div class="loader"></div>-->
+<!-- QUITABLE pone un icono para ir arriba -->
+<!--<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active"><i class="stack-interface stack-up-open-big"></i></a>-->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/scripts.js"></script>  <!-- Hace falta para las bnderas -->
+<!--<script src="js/flickity.min.js"></script>-->
+<!--<script src="js/easypiechart.min.js"></script>-->
+<!--<script src="js/parallax.js"></script> EFECTO DE SCROLL-->
+<!--<script src="js/typed.min.js"></script> animación como si estuviese tecleando-->
+<!--<script src="js/datepicker.js"></script>-->
+<script src="js/isotope.min.js"></script> <!-- PARA ordenar y filtrar-->
+<!--<script src="js/ytplayer.min.js"></script> Reproductor video youtube-->
+<!--<script src="js/lightbox.min.js"></script> Efecto para imágenes NO USADO-->
+<!--<script src="js/granim.min.js"></script> Gradientes para imágenes-->
+<!--<script src="js/jquery.steps.min.js"></script> jQuery Steps is a smart UI component which allows you to easily create wizard-like interfaces-->
+<!--<script src="js/countdown.min.js"></script> contador countdown-->
+<!--<script src="js/twitterfetcher.min.js"></script>-->
+<!--<script src="js/spectragram.min.js"></script> INSTAGRAM-->
+<!--<script src="js/smooth-scroll.min.js"></script>-->
+</body>
+</html>

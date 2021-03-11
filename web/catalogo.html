@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" lang="es-ES">
+    <title>Electrosa >> cat&aacute;logo</title>
+    <meta name="description" content="Aplicación de prueba de Programación de aplicaciones Web; Grado en informática; Universidad de La Rioja." lang="es-ES">
+    <meta name="keywords" content="electrodomesticos" lang="es-ES">
+    <meta name="language" content="es-ES">
+    <meta name="robots" content="index,follow">
+
+    <link href="css/electrosa.css" rel="stylesheet" media="all" type="text/css">
+    <link href="css/catalogoMosaico.css" rel="stylesheet" media="all" type="text/css">
+    <!--    <link href="css/catalogoLista.css" rel="stylesheet" media="all" type="text/css"> -->
+  </head>
+
+  <body >
+    <div class="logo"><a href="index.html"><img src="img/LogoElectrosa200.png" border="0"></a></div>
+
+    <div class="sombra">
+      <div class="nucleo">
+        <div id="lang">
+          <a href="index.html">Español</a> &nbsp; | &nbsp; <a href="index.html">English</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra_menus">	
+      <div class="pestanias">
+        <div class="grupoPestanias">
+          <div class="pestaniaSel">Para usuarios</div>
+          <div class="pestaniaNoSel"><a href="admin/index.html">Intranet</a></div>
+        </div>
+      </div>
+
+      <div id="menu" >
+        <ul>
+          <li>
+            <a href="index.html">Sobre electrosa<br/><img src="img/Home4.png"/></a>
+          </li>
+          <li>
+            <a href="index.html">Dónde estamos<br/><img src="img/map.png"/></a>
+          </li>
+          <li>
+            <a href="catalogo.jsp">Hojear catálogo<br/><img src="img/catalog.png"/></a>
+          </li>
+          <li>
+            <a href="index.html">Usuario registrado<br/><img src="img/registrado.png"/></a>
+          </li>
+        </ul>
+        <div style="clear: left;"></div>
+      </div>
+    </div> 
+
+    <div class="sombra">
+      <div class="nucleo">
+
+        <div id="migas">
+          <a href="index.html" title="Inicio" >Inicio</a>&nbsp; | &nbsp; 
+          <a href="generica.html" title="Hojear catalogo">Hojear catalogo</a>	<!-- &nbsp; | &nbsp; 
+          <a href="..." title="Otra cosa">Otra cosa</a>   -->	
+        </div>
+        <div class="contenido">
+          <h1>Nuestros productos</h1>
+          <p>Puede buscar los productos que necesite en nuestro cat&aacute;logo. Lo hemos organizado por marcas, tipo de electrodom&eacute;stico y rango de precios. Lo precios indicados en rojo corresponden a ofertas. </p>
+          <div class="filtroCatalogo">
+            <form name="filtroCatalogo" id="filtroCatalogo" action="">
+
+              <label for="tipo">Tipo :</label>
+              <select name="tipo" id="tipo">
+                <option value="-1">- Cualquiera -</option>
+                <option value="Aspirador">Aspiradores</option>
+                <option value="Campana">Campanas</option>
+                <option value="Cocina">Cocinas</option>
+                <option value="Frigorifico">Frigoríficos</option>
+                <option value="Horno">Hornos</option>
+                <option value="Lavadora">Lavadoras</option>
+                <option value="Lavavajillas">Lavavajillas</option>
+                <option value="Microondas">Microondas</option>
+                <option value="Placa">Placas</option>
+              </select>
+
+              <label for="fabricante">Fabricante :</label>
+              <select name="fabricante" id="fabricante">
+                <option value="-1">- Cualquiera -</option>
+                <option value="Edesa">Edesa</option>
+                <option value="Fagor">Fagor</option>
+                <option value="Miele">Miele</option>
+              </select>
+
+              <label for="precio">Precio :</label>
+              <select name="precio" id="precio">
+                <option value="-1">- Cualquiera -</option>
+                <option value="10-50">10-50 &euro;</option>
+                <option value="50-100">50-100 &euro;</option>
+                <option value="100-200">100-200 &euro;</option>
+                <option value="200-500">200-500 &euro;</option>
+                <option value="500-1000">500-1.000 &euro;</option>
+                <option value="1000">Mas de 1.000 &euro;</option>
+              </select>
+
+
+              <input name="buscar" id="buscar" type="image" title="Buscar" src="img/search25.png" alt="Buscar">
+
+            </form>
+
+            <div class="modovisual">
+              <a href="catalogo.html">Mosaico</a> &nbsp; | &nbsp; <a href="catalogo.html">Lista</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="resumResul redondeo">
+            Encontrados 5 artículos.
+          </div>
+
+          <ul class="resultBusqueda">
+            <li class="item redondeo">
+              <div class="foto">
+                <a href="generica.html"><img src="img/fotosElectr/Cocina/cocina172.jpg" alt="Mie/088FO" longdesc="Cocina 088FO - Miele" width="80"></a>
+              </div>
+              <div class="datos">
+                <span>Cocina 088FO - Miele</span>
+                <div class="precio">
+                  <span class="oferta">670 &euro;</span>
+                </div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">
+                </div>
+              </div>			  
+              <div class="codigo"><a href="generica.html">Mie/088FO</a></div>
+            </li>			
+
+            <li class="item redondeo">
+              <div class="foto">
+                <a href="generica.html"><img src="img/fotosElectr/Campana/campana1021.jpg" alt="Mie/074CA" width="80" longdesc="Campana extractora DA 269 - Miele"></a>			  </div>
+              <div class="datos">
+                <span>Campana extractora DA 269 - Miele</span>
+                <div class="precio">
+                  <span class="">425 &euro;</span>				</div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">				</div>
+              </div>			  
+              <div class="codigo"><a href="generica.html">Mie/074CA</a></div>
+            </li>
+            <li class="item redondeo">
+              <div class="foto">
+                <a href="generica.html"><img src="img/fotosElectr/Lavadora/lavadora1019.jpg" alt="Mie/002LD" width="80" longdesc="Lavadora Softtronic W 408  - Miele"></a>			  </div>
+              <div class="datos">
+                <span>Lavadora Softtronic W 408&nbsp; - Miele</span>
+                <div class="precio">
+                  <span class="">865 &euro;</span>				</div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">				</div>
+              </div>			  
+              <div class="codigo"><a href="generica.html">Mie/002LD</a></div>
+            </li>			
+            <li class="item redondeo">
+              <div class="foto">
+                <a href="generica.html"><img src="img/fotosElectr/Frigorifico/frigo161.jpg" alt="Mie/080FO" width="80" longdesc="Frigorífico-Congelador KT 3540 SN ed - Miele"></a>			  </div>
+              <div class="datos">
+                <span>Frigor&iacute;fico-Congelador KT 3540 SN ed - Miele</span>
+                <div class="precio">
+                  <span class="oferta">1.325 &euro;</span>				</div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">				</div>
+              </div>			  
+              <div class="codigo"><a href="generica.html">Mie/080FO</a></div>
+            </li>			
+            <li class="item redondeo">
+              <div class="foto">
+                <a href="generica.html"><img src="img/fotosElectr/Lavavajillas/lavavajillas151.jpg" alt="Mie/012LV" width="80" longdesc="Lavavajillas G 843 SCVi PLUS - Miele"></a>			  </div>
+              <div class="datos">
+                <span>Lavavajillas G 843 SCVi PLUS - Miele</span>
+                <div class="precio">
+                  <span class="">430 &euro;</span>				</div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">				</div>
+              </div>			  
+              <div class="codigo"><a href="generica.html">Mie/012LV</a></div>
+            </li>	
+          </ul>		
+          <div class="clear"></div>
+
+        </div>
+      </div>
+
+      <div class="separa"></div>
+
+      <div class="pie">
+        <span class="pie_izda">
+          <a href="mailto:francisco.garcia@unirioja.es">Contacto</a> &nbsp; | &nbsp; <a href="mapa.html">Mapa</a> </span>
+        <span class="pie_dcha">
+          &copy; 2012 Francisco J. García Izquierdo  </span>
+        <div class="clear"></div>  
+      </div>
+
+    </div>
+  </body>
+</html>

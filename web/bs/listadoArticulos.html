@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Electrosa << Administrador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aplicación de prueba de Programación de aplicaciones Web; Grado en informática; Universidad de La Rioja." lang="es-ES">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        <section class="bar bar-3 bar--sm bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="bar__module">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-right text-left-xs text-left-sm" style="font-size:13px;text-transform: uppercase;">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal">
+                                <li>
+                                    <div class="modal-instance">
+                                         <a href="index.html">Para usuarios</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="modal-instance">
+                                        <p>Intranet</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" data-notification-link="search-box">
+                                        <i class="stack-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="carrito.html">
+                                        <i class="stack-basket"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown dropdown--absolute">
+                                    <span class="dropdown__trigger">
+                                        <img alt="Image" class="flag" src="img/flag-2.png" />
+                                    </span>
+                                    <div class="dropdown__container">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-1 dropdown__content">
+                                                    <ul class="menu-vertical text-left">
+                                                        <li>
+                                                            <a href="#"><img alt="Image" class="flag" src="img/flag-1.png" /> EN</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        <!--end bar-->
+       
+        <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <input type="search" name="query" placeholder="Introduzca el texto a buscar" />
+                    </div>
+                </div>
+                <!--end of row-->
+            </form>
+        </div>
+        <!--end of notification-->
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li class="dropdown">
+                                        <span class="dropdown__trigger"><i class="icon icon-Books icon--sm"></i>Artículos</span>
+                                        <div class="dropdown__container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="dropdown__content col-lg-2 col-md-4">
+                                                        <ul class="menu-vertical">
+                                                            <li>
+                                                                <a href="listaArticulo.html">Listar</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="nuevoArticulo.html">Añadir</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="estadisticas.html"> Estadísticas</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--end dropdown content-->
+                                                </div>
+                                                <!--end row-->
+                                            </div>
+                                        </div>
+                                        <!--end dropdown container-->
+                                    </li>
+									<li class="dropdown">
+                                        <span class="dropdown__trigger"><i class="icon icon-Business-ManWoman icon--sm"></i>Clientes</span>
+                                        <div class="dropdown__container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="dropdown__content col-lg-2 col-md-4">
+                                                        <ul class="menu-vertical">
+                                                            <li>
+                                                                Listar
+                                                            </li>
+                                                            <li>
+                                                                Añadir
+                                                            </li>
+                                                    </div>
+                                                    <!--end dropdown content-->
+                                                </div>
+                                                <!--end row-->
+                                            </div>
+                                        </div>
+                                        <!--end dropdown container-->
+                                    </li>
+									<li>
+                                        <a href="#"><span><i class="icon icon-Receipt-3 icon--sm"></i>Pedidos</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="dropdown__trigger"><i class="icon icon-Shopping-Bag icon--sm"></i>Stocks</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+		<section class="switchable switchable--switch space--xs">
+                <div class="container">
+				<ol class="breadcrumbs">
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="indexAdministrador.html">Administración</a>
+					</li>
+					<li>
+						Listar artículos
+					</li>
+				</ol>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="height-50 imagebg border--round" data-overlay="2">
+                                <div class="background-image-holder">
+                                    <img alt="background" src="img/hero-2.jpg" />
+                                </div>
+                                <div class="pos-vertical-center col-md-6 col-lg-5 pl-5">
+                                    <h2>Lista de los artículos disponibles en nuestra web</h2>
+                                </div>
+                            </div>
+							<br>
+							<table class="border--round table--alternate-column">
+									<thead>
+										<tr>
+											<th style="text-align:center;" colspan="8"><h3>Listado de artículos en la BD</h3></th>
+										</tr>
+										<tr>
+											<th></th>
+											<th></th>
+											<th>Código</th>
+											<th>Fabricante</th>
+											<th>Tipo</th>
+											<th>Nombre</th>
+											<th>Stock</th>
+											<th>P.V.P.</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-338FO</a></td>
+											<td>FEdesa</td>
+											<td>Frigorífico</td>
+											<td>Frigorífico C-340 EL - Edesa</td>
+											<td>20</td>
+											<td>650,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-338FO</a></td>
+											<td>FEdesa</td>
+											<td>Frigorífico</td>
+											<td>Frigorífico C-340 EL - Edesa</td>
+											<td>20</td>
+											<td>650,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-338FO</a></td>
+											<td>FEdesa</td>
+											<td>Frigorífico</td>
+											<td>Frigorífico C-340 EL - Edesa</td>
+											<td>20</td>
+											<td>650,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-338FO</a></td>
+											<td>FEdesa</td>
+											<td>Frigorífico</td>
+											<td>Frigorífico C-340 EL - Edesa</td>
+											<td>20</td>
+											<td>650,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-338FO</a></td>
+											<td>FEdesa</td>
+											<td>Frigorífico</td>
+											<td>Frigorífico C-340 EL - Edesa</td>
+											<td>20</td>
+											<td>650,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-345LD</a></td>
+											<td>FEdesa</td>
+											<td>Lavadora</td>
+											<td>Lavadora 4L-1046 IT - Edesa</td>
+											<td>24</td>
+											<td>741,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-345LD</a></td>
+											<td>FEdesa</td>
+											<td>Lavadora</td>
+											<td>Lavadora 4L-1046 IT - Edesa</td>
+											<td>24</td>
+											<td>741,00€</td>
+										</tr>
+										<tr>
+											<td><i class="icon icon-Pencil icon--sm"></i></td>
+											<td><i class="icon icon-Close icon--sm"></i></td>
+											<td><a href="fichaArticulo.html">Ede-345LD</a></td>
+											<td>FEdesa</td>
+											<td>Lavadora</td>
+											<td>Lavadora 4L-1046 IT - Edesa</td>
+											<td>24</td>
+											<td>741,00€</td>
+										</tr>
+									</tbody>
+							</table>								
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            
+		</div>
+        <footer class="text-center-xs space--xs bg--dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">
+                                        <a href="mailto:francisco.garcia@unirioja.es"><span class="h6 type--uppercase" "> Contacto</span></a>
+                                    </a>
+                                </li>
+                                <li>
+                                     <a href="donde.html">
+                                        <span class="h6 type--uppercase">Mapa</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <span class="type--fine-print">&copy;
+                                2012 Francisco J. García Izquierdo</span>
+                            <a class="type--fine-print" href="#">Politica privacidad</a>
+                            <a class="type--fine-print" href="#">Aviso legal</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+        <!--<div class="loader"></div>-->
+        <!-- QUITABLE pone un icono para ir arriba -->
+        <!--<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active"><i class="stack-interface stack-up-open-big"></i></a>-->
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
