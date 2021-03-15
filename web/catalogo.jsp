@@ -110,7 +110,7 @@
             </form>
 
             <div class="modovisual">
-              <a href="catalogo.html">Mosaico</a> &nbsp; | &nbsp; <a href="catalogo.html">Lista</a>
+              <a href="catalogo.jsp>Mosaico</a> &nbsp; | &nbsp; <a href="catalogo.html">Lista</a>
             </div>
             <div class="clear"></div>
           </div>
@@ -118,7 +118,9 @@
           <%
                       GestorBD gbd = new GestorBD();
                       List<Articulo> arts = gbd.getArticulos();
+                      
             %>
+      
           
           
           <div class="resumResul redondeo">
@@ -128,7 +130,30 @@
           <ul class="resultBusqueda">
             
 
-           			
+              <% for (Articulo a : arts) {%>
+                <%
+                        String fotografia="img/fotosElectr/"+a.getFoto();
+                        %>
+              
+              <li class="item redondeo">
+              <div class="foto">
+                  <a href="catalogo.jsp"><img src=<%= fotografia%> alt="Mie/088FO" longdesc="<=a.getDescripcion()%>" width="80"></a>
+              </div>
+              <div class="datos">
+                <span><%= a.getNombre()%></span>
+                <div class="precio">
+                  <span class="oferta"> <%=a.getPvp()%> &euro;</span>
+                </div>
+                <div class="carro">
+                  <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">
+                </div>
+              </div>			  
+              <div class="codigo"><a href="catalogo.jsp"><%=a.getCodigo()%></a></div>
+            </li>			
+
+            
+              
+                  <% }%>	
             
               
               
