@@ -129,20 +129,21 @@
 
           <ul class="resultBusqueda">
             
-
-              <% for (Articulo a : arts) {%>
+              
+              <% int i =1;for (Articulo a : arts) {%>
                 <%
                         String fotografia="img/fotosElectr/"+a.getFoto();
+                       String oferta=" ";
                         %>
-              
+              <% if(i%3==0) oferta="oferta"; %>
               <li class="item redondeo">
               <div class="foto">
-                  <a href="catalogo.jsp"><img src=<%= fotografia%> alt="Mie/088FO" longdesc="<=a.getDescripcion()%>" width="80"></a>
+                  <a href="catalogo.jsp"><img src=<%= fotografia%> alt="Mie/088FO" longdesc="<%=a.getDescripcion()%>" width="80"></a>
               </div>
               <div class="datos">
                 <span><%= a.getNombre()%></span>
                 <div class="precio">
-                  <span class="oferta"> <%=a.getPvp()%> &euro;</span>
+                  <span class=<%=oferta%>  > <%=a.getPvp()%> &euro;</span>
                 </div>
                 <div class="carro">
                   <img src="img/shopcartadd_16x16.png" title="Añadir a mi carro de la compra">
@@ -153,7 +154,7 @@
 
             
               
-                  <% }%>	
+                  <%i++; }%>	
             
               
               
