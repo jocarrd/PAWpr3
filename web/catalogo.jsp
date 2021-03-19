@@ -138,7 +138,7 @@
               <% if(i%3==0) oferta="oferta"; %>
               <li class="item redondeo">
               <div class="foto">
-                  <a href="catalogo.jsp"><img src=<%= fotografia%> alt="Mie/088FO" longdesc="<%=a.getDescripcion()%>" width="80"></a>
+                  <a href="fichaArticulo.jsp?cart=<%=a.getCodigo()%>"><img src=<%= fotografia%> alt="Mie/088FO" longdesc="<%=a.getDescripcion()%>" width="80"></a>
               </div>
               <div class="datos">
                 <span><%= a.getNombre()%></span>

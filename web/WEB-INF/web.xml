@@ -13,6 +13,9 @@
       <page-encoding>UTF-8</page-encoding>
     </jsp-property-group>
   </jsp-config>-->
+    <welcome-file-list>
+        <welcome-file>catalogo.jsp</welcome-file>
+    </welcome-file-list>
     <resource-ref>
         <res-ref-name>jdbc/electrosa</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>

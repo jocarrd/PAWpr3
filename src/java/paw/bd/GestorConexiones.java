@@ -1,3 +1,5 @@
+package paw.bd;
+
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -5,7 +7,6 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
@@ -36,7 +37,7 @@ public class GestorConexiones {
             return DriverManager.getConnection("jdbc:mysql://localhost:3306/electrosa?serverTimezone=UTC","root", "root");
 
         }
-        return GestorConexiones.getConnection();
+        return ds.getConnection();
     }
 
     public static void returnConnection(Connection con) throws SQLException {

@@ -13,10 +13,16 @@ import paw.model.ExcepcionDeAplicacion;
 
 public class GestorBD {
     
-    public GestorBD() throws ClassNotFoundException{
+    static{
         
-        Class.forName("com.mysql.jdbc.Driver");
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(GestorBD.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
+    
 
     public Articulo getArticulo(String codigo) throws ExcepcionDeAplicacion {
         Articulo nuevo = null;
@@ -88,9 +94,7 @@ public class GestorBD {
         } catch (ExcepcionDeAplicacion ex) {
             Logger.getLogger(GestorBD.class.getName()).log(Level.SEVERE, null, ex);
         }
-        catch(ClassNotFoundException e){
-            
-        }
+        
 
     }
 }
